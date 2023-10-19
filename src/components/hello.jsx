@@ -7,7 +7,7 @@ const Hello = () => {
     // Define an async function to fetch data
     const fetchData = async () => {
         try {
-            const response = await fetch("");
+            const response = await fetch("/api/v1/user");
             const data = await response.json();
             setUser(data); // Update the user state with the fetched data
         } catch (error) {
